@@ -1,0 +1,20 @@
+{
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "age": 48,
+    "gender": "Male",
+    "married": true,
+    "email": "tony.stark@starkindustries.com",
+    "phone": "555-999-1234",
+    "address": {
+        "street": "10880 Malibu Point",
+        "city": "Malibu",
+        "state": "CA",
+        "zipCode": "90265"
+    },
+    "hobbies": [ "Engineering", "Flying", "Inventing" ],
+    "employeeId": "E1001",
+    "jobTitle": "CEO",
+    "department": "R&D",
+    "salary": 2000000
+}
