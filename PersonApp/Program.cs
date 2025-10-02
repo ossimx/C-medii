@@ -25,14 +25,22 @@ namespace PersonApp
                                         new List<string>() { "Engineering", "Flying", "Inventing" },
                                         "E1001", "CEO", "R&D", 2000000.00);
 
-            Console.WriteLine(emp.ToString());*/
+            Console.WriteLine(emp.ToString());
             Console.WriteLine("=== Load Person from JSON ===");
             Person bruce = Person.FromJsonFile("person.json");
             Console.WriteLine(bruce.ToString());
 
             Console.WriteLine("\n=== Load Employee from JSON ===");
             Employee tony = Employee.FromJsonFile("employee.json");
-            Console.WriteLine(tony.ToString());
+            Console.WriteLine(tony.ToString());*/
+            //Manager , vannak employeek [] , const minimumWage , manager fizetese minimumWage * employeeArraylength, manager nem szarmaztathato
+            //Director singletone 
+            //json input array employeek 
+            //output company : director > manager > employeek /*
+            Company shield = Company.FromJsonFile("company.json");
+
+            Console.WriteLine(shield.ToString());
         }
+        
     }
 }

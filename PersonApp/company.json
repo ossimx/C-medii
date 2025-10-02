@@ -19,7 +19,7 @@
         "EmployeeId": "D001",
         "BonusPercentage": 5.0
     },
-    "Manager": [
+    "Managers": [
         {
             "FirstName": "Steve",
             "LastName": "Rogers",
@@ -44,7 +44,7 @@
                     "Age": 35,
                     "Gender": "Female",
                     "Married": false,
-                    "Email": "natasha.romanoff@shield.com",
+                    "Email": "natasha@shield.com",
                     "Phone": "555-3333",
                     "Address": {
                         "Street": "Unknown",
@@ -62,7 +62,7 @@
                     "Age": 40,
                     "Gender": "Male",
                     "Married": true,
-                    "Email": "clint.barton@shield.com",
+                    "Email": "clint@shield.com",
                     "Phone": "555-4444",
                     "Address": {
                         "Street": "Farm House",
@@ -80,7 +80,7 @@
                     "Age": 28,
                     "Gender": "Female",
                     "Married": false,
-                    "Email": "wanda.maximoff@shield.com",
+                    "Email": "wanda@shield.com",
                     "Phone": "555-5555",
                     "Address": {
                         "Street": "Sokovia",
@@ -385,6 +385,26 @@
                     "BonusPercentage": 2.1
                 }
             ]
+        }
+    ],
+    "Employees": [
+        {
+            "FirstName": "Peter",
+            "LastName": "Griffin",
+            "Age": 45,
+            "Gender": "Male",
+            "Married": true,
+            "Email": "peter.griffin@shield.com",
+            "Phone": "555-7697",
+            "Address": {
+                "Street": "Main Street",
+                "City": "Quehog",
+                "State": "NY",
+                "Zip": "11375"
+            },
+            "Hobbies": [ "Drinking" ],
+            "EmployeeId": "E008",
+            "BonusPercentage": 10.0
         }
     ]
 }

@@ -1,20 +1,391 @@
 {
-    "firstName": "Tony",
-    "lastName": "Stark",
-    "age": 48,
-    "gender": "Male",
-    "married": true,
-    "email": "tony.stark@starkindustries.com",
-    "phone": "555-999-1234",
-    "address": {
-        "street": "10880 Malibu Point",
-        "city": "Malibu",
-        "state": "CA",
-        "zipCode": "90265"
+    "Name": "S.H.I.E.L.D.",
+    "MinimumWage": 1500,
+    "Director": {
+        "FirstName": "Nick",
+        "LastName": "Fury",
+        "Age": 60,
+        "Gender": "Male",
+        "Married": true,
+        "Email": "nick.fury@shield.com",
+        "Phone": "555-1111",
+        "Address": {
+            "Street": "SHIELD HQ",
+            "City": "New York",
+            "State": "NY",
+            "Zip": "10001"
+        },
+        "Hobbies": [ "Strategy", "Espionage" ],
+        "EmployeeId": "D001",
+        "BonusPercentage": 5.0
     },
-    "hobbies": [ "Engineering", "Flying", "Inventing" ],
-    "employeeId": "E1001",
-    "jobTitle": "CEO",
-    "department": "R&D",
-    "salary": 2000000
+    "Managers": [
+        {
+            "FirstName": "Steve",
+            "LastName": "Rogers",
+            "Age": 100,
+            "Gender": "Male",
+            "Married": false,
+            "Email": "steve.rogers@shield.com",
+            "Phone": "555-2222",
+            "Address": {
+                "Street": "Brooklyn",
+                "City": "New York",
+                "State": "NY",
+                "Zip": "11201"
+            },
+            "Hobbies": [ "Leadership", "Fitness" ],
+            "EmployeeId": "M001",
+            "BonusPercentage": 3.0,
+            "Employees": [
+                {
+                    "FirstName": "Natasha",
+                    "LastName": "Romanoff",
+                    "Age": 35,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "natasha@shield.com",
+                    "Phone": "555-3333",
+                    "Address": {
+                        "Street": "Unknown",
+                        "City": "Moscow",
+                        "State": "RU",
+                        "Zip": "00000"
+                    },
+                    "Hobbies": [ "Martial Arts", "Infiltration" ],
+                    "EmployeeId": "E001",
+                    "BonusPercentage": 2.1
+                },
+                {
+                    "FirstName": "Clint",
+                    "LastName": "Barton",
+                    "Age": 40,
+                    "Gender": "Male",
+                    "Married": true,
+                    "Email": "clint@shield.com",
+                    "Phone": "555-4444",
+                    "Address": {
+                        "Street": "Farm House",
+                        "City": "Unknown",
+                        "State": "KS",
+                        "Zip": "50000"
+                    },
+                    "Hobbies": [ "Archery", "Family" ],
+                    "EmployeeId": "E002",
+                    "BonusPercentage": 2.5
+                },
+                {
+                    "FirstName": "Wanda",
+                    "LastName": "Maximoff",
+                    "Age": 28,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "wanda@shield.com",
+                    "Phone": "555-5555",
+                    "Address": {
+                        "Street": "Sokovia",
+                        "City": "Unknown",
+                        "State": "SOK",
+                        "Zip": "11111"
+                    },
+                    "Hobbies": [ "Magic", "Strategy" ],
+                    "EmployeeId": "E003",
+                    "BonusPercentage": 2.3
+                }
+            ]
+        },
+        {
+            "FirstName": "Tony",
+            "LastName": "Stark",
+            "Age": 48,
+            "Gender": "Male",
+            "Married": true,
+            "Email": "tony.stark@shield.com",
+            "Phone": "555-6666",
+            "Address": {
+                "Street": "10880 Malibu Point",
+                "City": "Malibu",
+                "State": "CA",
+                "Zip": "90265"
+            },
+            "Hobbies": [ "Engineering", "Flying", "Partying" ],
+            "EmployeeId": "M002",
+            "BonusPercentage": 3.5,
+            "Employees": [
+                {
+                    "FirstName": "James",
+                    "LastName": "Rhodes",
+                    "Age": 45,
+                    "Gender": "Male",
+                    "Married": true,
+                    "Email": "rhodes@shield.com",
+                    "Phone": "555-6667",
+                    "Address": {
+                        "Street": "LA",
+                        "City": "Los Angeles",
+                        "State": "CA",
+                        "Zip": "90001"
+                    },
+                    "Hobbies": [ "Flying" ],
+                    "EmployeeId": "E004",
+                    "BonusPercentage": 2.0
+                },
+                {
+                    "FirstName": "Sam",
+                    "LastName": "Wilson",
+                    "Age": 38,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "sam.wilson@shield.com",
+                    "Phone": "555-6668",
+                    "Address": {
+                        "Street": "Detroit",
+                        "City": "Detroit",
+                        "State": "MI",
+                        "Zip": "48201"
+                    },
+                    "Hobbies": [ "Flying" ],
+                    "EmployeeId": "E005",
+                    "BonusPercentage": 2.2
+                },
+                {
+                    "FirstName": "Pepper",
+                    "LastName": "Potts",
+                    "Age": 40,
+                    "Gender": "Female",
+                    "Married": true,
+                    "Email": "pepper@shield.com",
+                    "Phone": "555-6669",
+                    "Address": {
+                        "Street": "NY",
+                        "City": "New York",
+                        "State": "NY",
+                        "Zip": "10003"
+                    },
+                    "Hobbies": [ "Management" ],
+                    "EmployeeId": "E006",
+                    "BonusPercentage": 2.5
+                },
+                {
+                    "FirstName": "Happy",
+                    "LastName": "Hogan",
+                    "Age": 50,
+                    "Gender": "Male",
+                    "Married": true,
+                    "Email": "happy@shield.com",
+                    "Phone": "555-6670",
+                    "Address": {
+                        "Street": "NY",
+                        "City": "New York",
+                        "State": "NY",
+                        "Zip": "10004"
+                    },
+                    "Hobbies": [ "Driving" ],
+                    "EmployeeId": "E007",
+                    "BonusPercentage": 2.3
+                }
+            ]
+        },
+        {
+            "FirstName": "Carol",
+            "LastName": "Danvers",
+            "Age": 35,
+            "Gender": "Female",
+            "Married": false,
+            "Email": "carol.danvers@shield.com",
+            "Phone": "555-7777",
+            "Address": {
+                "Street": "LA",
+                "City": "Los Angeles",
+                "State": "CA",
+                "Zip": "90002"
+            },
+            "Hobbies": [ "Flying", "Strategy" ],
+            "EmployeeId": "M003",
+            "BonusPercentage": 4.0,
+            "Employees": [
+                {
+                    "FirstName": "Peter",
+                    "LastName": "Parker",
+                    "Age": 25,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "peter.parker@shield.com",
+                    "Phone": "555-7778",
+                    "Address": {
+                        "Street": "Queens",
+                        "City": "NY",
+                        "State": "NY",
+                        "Zip": "11375"
+                    },
+                    "Hobbies": [ "Photography" ],
+                    "EmployeeId": "E008",
+                    "BonusPercentage": 2.0
+                },
+                {
+                    "FirstName": "Shuri",
+                    "LastName": "Wakanda",
+                    "Age": 20,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "shuri@shield.com",
+                    "Phone": "555-7779",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00001"
+                    },
+                    "Hobbies": [ "Tech" ],
+                    "EmployeeId": "E009",
+                    "BonusPercentage": 2.1
+                },
+                {
+                    "FirstName": "T'Challa",
+                    "LastName": "Black Panther",
+                    "Age": 30,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "tchalla@shield.com",
+                    "Phone": "555-7780",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00002"
+                    },
+                    "Hobbies": [ "Strategy" ],
+                    "EmployeeId": "E010",
+                    "BonusPercentage": 2.2
+                },
+                {
+                    "FirstName": "Okoye",
+                    "LastName": "Wakanda",
+                    "Age": 32,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "okoye@shield.com",
+                    "Phone": "555-7781",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00003"
+                    },
+                    "Hobbies": [ "Martial Arts" ],
+                    "EmployeeId": "E011",
+                    "BonusPercentage": 2.1
+                },
+                {
+                    "FirstName": "M'Baku",
+                    "LastName": "Wakanda",
+                    "Age": 35,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "mbaku@shield.com",
+                    "Phone": "555-7782",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00004"
+                    },
+                    "Hobbies": [ "Strategy" ],
+                    "EmployeeId": "E012",
+                    "BonusPercentage": 2.2
+                },
+                {
+                    "FirstName": "Nakia",
+                    "LastName": "Wakanda",
+                    "Age": 33,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "nakia@shield.com",
+                    "Phone": "555-7783",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00005"
+                    },
+                    "Hobbies": [ "Combat" ],
+                    "EmployeeId": "E013",
+                    "BonusPercentage": 2.1
+                },
+                {
+                    "FirstName": "Erik",
+                    "LastName": "Killmonger",
+                    "Age": 36,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "erik@shield.com",
+                    "Phone": "555-7784",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00006"
+                    },
+                    "Hobbies": [ "Strategy" ],
+                    "EmployeeId": "E014",
+                    "BonusPercentage": 2.0
+                },
+                {
+                    "FirstName": "Ayo",
+                    "LastName": "Wakanda",
+                    "Age": 30,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "ayo@shield.com",
+                    "Phone": "555-7785",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00007"
+                    },
+                    "Hobbies": [ "Combat" ],
+                    "EmployeeId": "E015",
+                    "BonusPercentage": 2.1
+                },
+                {
+                    "FirstName": "Zuri",
+                    "LastName": "Wakanda",
+                    "Age": 55,
+                    "Gender": "Male",
+                    "Married": false,
+                    "Email": "zuri@shield.com",
+                    "Phone": "555-7786",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00008"
+                    },
+                    "Hobbies": [ "Advisor" ],
+                    "EmployeeId": "E016",
+                    "BonusPercentage": 2.0
+                },
+                {
+                    "FirstName": "Ramonda",
+                    "LastName": "Wakanda",
+                    "Age": 80,
+                    "Gender": "Female",
+                    "Married": false,
+                    "Email": "ramonda@shield.com",
+                    "Phone": "555-7787",
+                    "Address": {
+                        "Street": "Wakanda",
+                        "City": "Unknown",
+                        "State": "WK",
+                        "Zip": "00009"
+                    },
+                    "Hobbies": [ "Advisor" ],
+                    "EmployeeId": "E017",
+                    "BonusPercentage": 2.1
+                }
+            ]
+        }
+    ],
+    "Employees": []
 }

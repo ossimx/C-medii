@@ -75,16 +75,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Director.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="company.json" />
     <None Include="employee.json" />
     <None Include="packages.config" />
     <None Include="person.json" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
